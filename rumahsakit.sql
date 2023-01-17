@@ -1,6 +1,6 @@
-create database Rumah_Sakit_tes
+create database Rumah_Sakit
+use Rumah_Sakit
 
-use Rumah_Sakit_tes
 create table Perawat
 (
 id_perawat varchar (20) not null,
