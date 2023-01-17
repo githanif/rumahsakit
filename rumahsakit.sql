@@ -261,7 +261,7 @@ kode_obat,
 nama_obat,
 jenis_obat,
 tahun_produksi,
-masa_kadaluarsa,
+masa_kadaluarsa,441883
 harga
 )
 values
@@ -864,7 +864,7 @@ inner join Kamar on Kamar.no_kamar = pasien.no_kamar
 inner join Rekam_Medis on Rekam_Medis.id_rekam_medis = Pasien.id_rekam_medis
 go
 
-create procedure caripasien4
+create procedure caripasien
 @nama varchar (50)
 as
 Select * from Pasien where nama_pasien like  '%' + @nama + '%'
@@ -872,7 +872,7 @@ go
 
 exec detail_pasien_untuk_apotik
 exec detail_pasien_untuk_dokter
-exec caripasien4 'Abdal'
+exec caripasien 'Abdal'
 
 -- Pembuatan 3 Trigger
 
