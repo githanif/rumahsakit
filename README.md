@@ -1,8 +1,6 @@
 # rumahsakit
 Database ini menggunakan Microsoft SQL Server
 
-
---$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 --Special Thanks
 --Mas Nakyon yang ngajarin di bagian teknisnya
 --Mas Daafn yang ngajarin dibagian implementasinya
