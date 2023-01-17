@@ -914,13 +914,13 @@ print 'Nama Host : '+ host_name()
 
 
 CREATE FUNCTION 
-dbo.hargakamar2 (@hari int, @no_kamar varchar (20))
+dbo.hargakamar (@hari int, @no_kamar varchar (20))
 returns int 
 as
 begin return @hari * (select harga from Kamar where no_kamar = @no_kamar)
 end;
 
-select id_pasien, dbo.hargakamar2 (2,no_kamar) from Pasien
+select id_pasien, dbo.hargakamar (2,no_kamar) from Pasien
 select * from kamar
 -- Akan ditambahkan informasi secara detail menggunakan inner join
 
